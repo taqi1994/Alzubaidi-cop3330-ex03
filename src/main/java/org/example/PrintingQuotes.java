@@ -1,20 +1,26 @@
-import java.util.*;
 
-public class PrintingQuotes {
+import java.util.Scanner;
+
+public class PrintingQuotes
+
+{
 
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
+        
+        Scanner reader = new Scanner(System.in);
 
-        System.out.print("What is the quote? "); //will ask to enter a quote
+        System.out.print("Enter Noun: "); //ask for an input
+        String noun = reader.nextLine();
+        System.out.print("Enter a Verb : "); //ask for an input
+        String Verb = reader.nextLine();
+        System.out.print("Enter Adjective: "); //ask for an input
+        String Adjective = reader.nextLine();
+        System.out.print("Enter Adverb: "); //ask for an input
+        String Adverb = reader.nextLine();
 
-        String quote = sc.nextLine();
-
-        System.out.print("Who said it? "); //will ask for a name (author)
-
-        String author = sc.nextLine();
-
-        System.out.println(author + " says, \""+quote+"\""); //wil give out the results:
+        //this will print out inputs in front of a string
+        System.out.println("Do you " +Verb +" your" + Adjective +" "+ noun +" "+ Adverb+" ? That's hilarious");
     }
-    
+
 }
